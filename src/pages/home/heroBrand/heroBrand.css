@@ -1,6 +1,8 @@
 
+
 .hero-brand-container{
-    position: relative;
+    position: absolute;
+    width: 100%;
     transform: translateY(-50%);
     z-index: 5;
     background-color: transparent;
@@ -29,9 +31,7 @@
     align-items: center;
     justify-content: center;
 }
-/* .hero-brand-container .hero-brand-wrapper .slick-slider>button{
-    display: none !important;
-} */
+
 
 .hero-brand-container .brand-item{
     padding: 10px;
@@ -39,4 +39,14 @@
     box-shadow: 0px 0px 8px 2px #0000001a;
     margin-bottom: 10px;
     max-width: 270px;
+}
+
+.slick-dots li{
+    margin: 0;
+}
+
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #ffa400;
 }

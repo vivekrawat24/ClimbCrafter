@@ -26,14 +26,15 @@ function    HeroBrand() {
         arrows:false,
         infinite: true,
         slidesToShow:  4,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
         autoplay: false,
         autoplaySpeed: 3000,
         pauseOnHover: false
     };
 
     return (
-        <div className="hero-brand-container">
+        <section className="relative" >
+            <div className="hero-brand-container">
             <div className="hero-brand-wrapper">
                 <Slider {...setting}>
                     {brand.map((item) => <div className="brand-item" key={item.id}>
@@ -42,8 +43,10 @@ function    HeroBrand() {
                     </div>)}
                 </Slider>
             </div>
+
+            </div>
         
-        </div>
+        </section>
     );
 }
 

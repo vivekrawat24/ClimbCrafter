@@ -5,7 +5,8 @@ import HeroBrand from './heroBrand/HeroBrand'
 import ProductSlider from '../../Component/ProductSlider/ProductSlider.jsx'
 import ImageBanner from '../../Component/imageBanner/ImageBanner.jsx'
 import products from '../../Component/Products.js'
-import Testing from './Testing/Testing.jsx'
+import HeroSlider from './heroSlider/HeroSlider.jsx'
+
 
 
 
@@ -15,15 +16,30 @@ function Home() {
     return (
         <div className='home'>
             <Navbar></Navbar>
-            <Header></Header>
+            {/* <Header></Header> */}
+            <HeroSlider />
             <HeroBrand />
-            <ProductSlider products={products} />
+            <section className=' mt-28 py-10'>
+                <ProductSlider products={products} />
+            </section>
             <ImageBanner />
-            <Testing />
+            <section className=' py-[70px]'>
+                <h2 className='text-center font-bold text-[42px] text-[#3c3c3c]'>Best Selling Hunting Packs</h2>
+                <ProductSlider products={products} className="mt-10" />
+            </section>
 
-            
-            
-            
+            <section className=' py-[70px] bg-[#f5f5f5]'>
+                <h2 className='text-center font-bold text-[42px] text-[#3c3c3c]'>Best Selling Hunting Packs</h2>
+                <ProductSlider products={products} className="mt-10" />
+            </section>
+
+            <ImageBanner />
+            <section className=' py-[70px] bg-[#f5f5f5]'>
+                <h2 className='text-center font-bold text-[42px] text-[#3c3c3c]'>Best Selling Hunting Packs</h2>
+                <ProductSlider products={products} className="mt-10" />
+            </section>
+
+
         </div>
     )
 }

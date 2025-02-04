@@ -37,7 +37,7 @@ export default function Card(product) {
     // card-item-color
 
     return (
-        <div className='card-wrapper'>
+        <div className='card-wrapper bg-white'>
             <div className="img-container relative ">
                 {product.offerImage && <img src={product?.offerImage} alt="item" className=' absolute top-0 left-0' />}
                 <img src={product?.product_img[active]} alt="item" className='item-img' />
